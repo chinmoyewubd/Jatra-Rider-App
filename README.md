@@ -38,7 +38,7 @@ The Passenger App is the user interface for the system, responsible for:
 ### Installation
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/enamulhasan248/Jatra-Passenger-Side.git](https://github.com/enamulhasan248/Jatra-Passenger-Side.git)
+    git clone (https://github.com/chinmoyewubd/Jatra-Rider-App.git)
     ```
 2.  **Open in Android Studio:**
     * Launch Android Studio and select "Open".
