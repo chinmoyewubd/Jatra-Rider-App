@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CapstoneBus" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Optional: set your primary color -->
+        <item name="colorPrimary">#3665A0</item>
+        <item name="colorPrimaryVariant">#254C7A</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Optional: status bar -->
+        <item name="android:statusBarColor">#15314F</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.CapstoneBus" parent="Base.Theme.CapstoneBus" />
+</resources>

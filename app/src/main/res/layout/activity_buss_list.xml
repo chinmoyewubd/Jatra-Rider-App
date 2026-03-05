@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".Buss_List_activity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@drawable/route_header_bg">
+
+        <TextView
+            android:id="@+id/startPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rampura"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_right_alt_24" />
+
+        <TextView
+            android:id="@+id/endPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Stuff Quarter"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="end" />
+    </LinearLayout>
+
+
+
+    <!-- ✅ RecyclerView (same id: busList) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/busList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never" />
+
+    <!-- Button area (wrap_content so it doesn't eat screen) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/alternateRouteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alternate Route"
+            android:visibility="gone"
+            android:onClick="onFindAlternateRouteClicked"
+            android:background="@drawable/custom_button_background" />
+    </LinearLayout>
+
+</LinearLayout>

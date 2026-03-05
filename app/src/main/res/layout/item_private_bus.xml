@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:background="@android:color/white">
+
+    <!-- BUS CARD -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_border"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:elevation="4dp"
+        android:layout_margin="4dp">
+
+        <!-- Left: Bus Icon -->
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/bus_24"
+            app:tint="#007AFF" />
+
+        <!-- Middle: Bus Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1">
+
+            <!-- Bus Number & Status Indicator -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Bus Number (e.g., BUS001) -->
+                <TextView
+                    android:id="@+id/busNumberText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E1E1E"
+                    android:text="Mehadi Hasan Shameem" />
+
+                <!-- Status Indicator Dot -->
+                <View
+                    android:id="@+id/statusDot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="#4CAF50" />
+
+                <!-- Status Text -->
+                <TextView
+                    android:id="@+id/statusText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Active"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="3dp"
+                    android:textColor="#4CAF50" />
+
+            </LinearLayout>
+
+            <!-- Driver Name & Bus ID Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical">
+
+                <!-- Driver Name -->
+                <TextView
+                    android:id="@+id/driverNameText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="01959564847"
+                    android:textSize="13sp"
+                    android:textColor="#555555"
+                    android:maxLines="1"
+                     />
+
+                <!-- Bus ID (e.g., ROUTE-123) -->
+                <TextView
+                    android:id="@+id/busIdText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DHAKA METRO-GHA 31-9957"
+                    android:textSize="11sp"
+                    android:textColor="#999999"
+                    android:layout_marginStart="8dp"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+            </LinearLayout>
+
+            <!-- Route: From → To -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/routeFromText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dhaka"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                     />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/arrow"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:tint="#999999" />
+
+                <TextView
+                    android:id="@+id/routeToText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chittagong"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#007AFF"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                     />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Right: Arrow Icon -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow"
+            android:background="@drawable/circle_bg"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

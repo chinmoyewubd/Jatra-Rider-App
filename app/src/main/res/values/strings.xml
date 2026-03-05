@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Jatra</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="app_logo">App Logo</string>
+    <string name="user_login">User Log In</string>
+    <string name="driver_login">Driver Log In</string>
+
+    <string-array name="bus_name">
+        <item>Alif</item>
+        <item>Raida</item>
+        <item>Akash</item>
+        <item>Rajdhani</item>
+        <item>Akash</item>
+        <item>Alif</item>
+
+    </string-array>
+
+    <string-array name="start">
+        <item>10.10 am</item>
+        <item>11.10 am</item>
+        <item>1.00 am</item>
+        <item>3.10 am</item>
+        <item>8.50 am</item>
+        <item>10.10 pm</item>
+    </string-array>
+    <string-array name="end">
+        <item>11.10 am</item>
+        <item>12.10 pm</item>
+        <item>2.00 pm</item>
+        <item>4.10 pm</item>
+        <item>9.50 pm</item>
+        <item>11.10 pm</item>
+    </string-array>
+
+    <string-array name="stoppages">
+        <item>Rampura</item>
+        <item>Badda</item>
+        <item>Shahj</item>
+        <item>Basht</item>
+        <item>Nadda</item>
+        <item>NBazar</item>
+    </string-array>
+
+    <string-array name="distances">
+        <item>0 km</item>
+        <item>.5 k</item>
+        <item>.6 k</item>
+        <item>.8 k</item>
+        <item>.9 km</item>
+        <item>2 k</item>
+    </string-array>
+    <string name="title_activity_current_location">CurrentLocationActivity</string>
+
+
+</resources>

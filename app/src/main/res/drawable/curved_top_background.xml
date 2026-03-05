@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base dark blue rectangle -->
+    <item android:bottom="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#15314F" />
+        </shape>
+    </item>
+
+    <!-- Wave curve - creates upward curve at bottom -->
+    <item
+        android:top="100dp"
+        android:left="-200dp"
+        android:right="-200dp"
+        android:bottom="0dp">
+        <shape android:shape="oval">
+            <solid android:color="#15314F" />
+        </shape>
+    </item>
+
+</layer-list>

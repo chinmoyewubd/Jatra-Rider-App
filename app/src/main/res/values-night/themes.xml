@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.CapstoneBus" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#15314F</item>
+        <item name="colorPrimaryVariant">#15314F</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <item name="android:statusBarColor">#15314F</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.CapstoneBus" parent="Base.Theme.CapstoneBus" />
+</resources>

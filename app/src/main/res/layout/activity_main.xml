@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9eaed">
+
+    <!-- Logo at the top -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/app_logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/jatra" />
+
+    <!-- Button Container -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/showallprivatebus"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="14dp"
+            android:text="Show All Cars"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#15314F"
+            app:cornerRadius="14dp"
+            app:elevation="2dp"
+            app:rippleColor="#33FFFFFF"
+            app:icon="@drawable/bus_24"
+            app:iconTint="@android:color/white"
+            app:iconPadding="10dp"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/privatebus"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="14dp"
+            android:text="Car SmartTrack"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#15314F"
+            app:cornerRadius="14dp"
+            app:elevation="2dp"
+            app:rippleColor="#33FFFFFF"
+            app:icon="@android:drawable/ic_menu_mylocation"
+            app:iconTint="@android:color/white"
+            app:iconPadding="10dp"
+            app:iconGravity="textStart" />
+
+    </LinearLayout>
+
+</RelativeLayout>

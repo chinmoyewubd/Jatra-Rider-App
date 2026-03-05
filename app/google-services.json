@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "518125002108",
+    "project_id": "ewubdcapstonelocalbus",
+    "storage_bucket": "ewubdcapstonelocalbus.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518125002108:android:c396910ab02617a6aa58f9",
+        "android_client_info": {
+          "package_name": "com.example.capstonebus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJaNMLJvDdiDulv2R9sjPZpCcNih9onvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
